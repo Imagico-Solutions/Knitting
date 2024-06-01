@@ -1,14 +1,17 @@
 
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Signup from './components/Signup';
+import Login from './components/Login';
 
 function App() {
-
-
   return (
-    <>
- <h1 className='underline'>welcome to imagico</h1>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
