@@ -1,12 +1,13 @@
 
 import './App.css'
+import Login from './components/Login'
 
 function App() {
 
 
   return (
     <>
- <h1 className='underline'>welcome to imagico</h1>
+   <Login/>
     </>
   )
 }
