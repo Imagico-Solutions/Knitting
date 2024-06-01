@@ -1,4 +1,5 @@
 import  { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     useEffect(() => {
@@ -43,7 +44,7 @@ const Login = () => {
               placeholder="Enter at least 8+ characters"
             />
                 <button
-              className="bg-teal-700 hover:bg-teal-800 text-white w-full font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+              className="bg-gray-700 hover:bg-gray-800 text-white w-full font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
               type="button"
             >
               Log In
@@ -53,7 +54,7 @@ const Login = () => {
 
         </form>
         <p className="mt-4 text-center text-gray-600 text-sm">
-          Not a member yet? <a href="#" className="text-teal-600 hover:text-teal-800">Sign Up</a>
+          Not a member yet? <Link to="/" className="text-indigo-600">Sign up</Link>
         </p>
       </div>
        {/* Top Right Semi-Circle */}
